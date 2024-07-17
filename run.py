@@ -13,7 +13,7 @@ SHOCK_API = SerialAPI(port=None)
 
 # At startup send a beep to the shocker
 start_shocker = SHOCK_API.shocker(SHOCKER_ID)
-#start_shocker.beep(1)
+start_shocker.beep(0.2)
 
 
 @app.route("/api/apioperate", methods=['POST'])
